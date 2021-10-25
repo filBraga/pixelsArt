@@ -26,3 +26,12 @@ document.querySelectorAll('.pixel').forEach((item) => {
     }
   });
 });
+
+function clearFunction() {
+  document.querySelectorAll('.pixel').forEach((item) => {
+    item.classList.remove('black');
+    item.classList.remove('red');
+    item.classList.remove('blue');
+    item.classList.remove('green');
+  });
+}
