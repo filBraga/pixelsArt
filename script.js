@@ -6,7 +6,7 @@ const greenPen = document.querySelector('.green');
 let penSelected = blackPen;
 
 document.querySelectorAll('.color').forEach((item) => {
-  item.addEventListener('click', (event) => {
+  item.addEventListener('click', () => {
     penSelected.classList.remove('selected');
     item.classList.add('selected');
     penSelected = item;
@@ -14,14 +14,14 @@ document.querySelectorAll('.color').forEach((item) => {
 });
 
 document.querySelectorAll('.pixel').forEach((item) => {
-  item.addEventListener('click', (event) => {
-    if (penSelected == blackPen) {
+  item.addEventListener('click', () => {
+    if (penSelected === blackPen) {
       item.classList.add('black');
-    } else if (penSelected == redPen) {
+    } else if (penSelected === redPen) {
       item.classList.add('red');
-    } else if (penSelected == bluePen) {
+    } else if (penSelected === bluePen) {
       item.classList.add('blue');
-    } else if (penSelected == greenPen) {
+    } else if (penSelected === greenPen) {
       item.classList.add('green');
     }
   });
