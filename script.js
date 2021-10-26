@@ -35,3 +35,6 @@ function clearFunction() {
     item.classList.remove('green');
   });
 }
+
+
+/* Commit */
