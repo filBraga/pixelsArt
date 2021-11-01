@@ -1,3 +1,7 @@
+*{
+  text-align: center;
+}
+
 .color {
   border: 1px solid black;
   display: inline-block;
@@ -34,6 +38,14 @@
 
 .green {
   background-color: green;
+}
+
+h1{
+  padding-top: 30px;
+}
+
+.container-md{
+
 }
 
 
